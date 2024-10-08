@@ -1,6 +1,8 @@
 <?php
 
 if ($_ENV['ENV'] == 'production') {
+  define('BASEURL', $_ENV['APP_URL']);
+  
   $host = $_ENV['PG_HOST'];
   $port = $_ENV['PG_PORT'];
   $db = $_ENV['PG_DB'];

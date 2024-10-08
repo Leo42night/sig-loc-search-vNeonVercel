@@ -12,6 +12,6 @@ if (empty($_SESSION['csrf_token'])) {
   $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 
-require_once '../app/init.php';
+require_once __DIR__.'/app/init.php';
 
-$app = new App;
+// $app = new App;
